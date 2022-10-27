@@ -1,1 +1,38 @@
-
+#calculadora {
+    background: aqua;
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+}
+#calculadora input {
+    background: blueviolet;
+    color: cornsilk;
+    border-radius: 10px;
+    padding: 5px;
+}
+#calculadora button {
+    background: darkgray;
+    color: darkred;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 7px;
+}
+#calculadora button :hover{
+    background: green;
+    color: yellow;
+    cursor: pointer;
+}
+#spTotal {
+backdrop-filter: yellow;
+color: green;
+border-radius: 10px;
+padding: 5px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.spLista{
+    backdrop-filter: red;
+    border-radius: 10px;
+    font-family: monospace;
+    color: greenyellow;
+    width: 200px;
+}
