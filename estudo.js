@@ -1,30 +1,4 @@
-let tabuada = 1;
-
-function escreva(){
-    document.write(tabuada + " x 1 =  " + (tabuada*1) + "<br>");
-    document.write(tabuada + " x 2 =  " + (tabuada*2) + "<br>");
-    document.write(tabuada + " x 3 =  " + (tabuada*3) + "<br>");
-    document.write(tabuada + " x 4 =  " + (tabuada*4) + "<br>");
-    document.write(tabuada + " x 5 =  " + (tabuada*5) + "<br>");
-    document.write(tabuada + " x 6 =  " + (tabuada*6) + "<br>");
-    document.write(tabuada + " x 7 =  " + (tabuada*7) + "<br>");
-    document.write(tabuada + " x 8 =  " + (tabuada*8) + "<br>");
-    document.write(tabuada + " x 9 =  " + (tabuada*9) + "<br>");
-    document.write(tabuada + " x 10 =  " + (tabuada*10) + "<br>");
-}
-
- function minhaTabuada(){
-     for(let i = 1; i <= 100; i++){
-         document.write("Tabuada do " + i + "<br>");
-         for(let j = 1; j <= 10; j++){
-            document.write(i + " x " + j + " = " + (j*i) + "<br>");
-         }
-         document.write("<br>");
-     }
- }
-
- function cubo(){
-     for(let tabuada = 5;
+let tabuada = 5;
 
 function escreva(){
     document.write(tabuada + " x 1 = " + (tabuada*1) + "<br>");
@@ -63,8 +37,10 @@ function mat(){
     for(let i=1; i<=t; i++){
         r = v * (1+(j/100));
         v = r;
+        
     }
     document.write("Resultado " + r);
+    document.getElementById("TotalGeral").innerHTML = "total: "+(r);
 }
 function media(){
     let n1 = document.getElementById("v1").value
@@ -87,28 +63,3 @@ function subtração(){
     let r = (Number(n1) - Number(n2) - Number(n3));
     document.getElementById("resultado").innerHTML = "Subtração : " + r;
  }
-//document.write("mês " + i+ " = " moeda(r) + "<br>";
-
-
-
-
-
-
-
-
-//document.write("resultado" + moeda (r));
-     for(let i = 1; i<=t; i++){
-         r = v * (1+ (j/100));
-         v = r;
-     }
-     document.write("Resultado "+r);
- }
-function Média (){
-    let v1 = document.getElementById ("v1") .value;
-    let v2 = document.getElementById ("v2") .value;
-    let v3 = document.getElementById ("v3") .value;
-    let r = (Number(v1))/3; + Number(v2) + Number (v3)/3;
-    document.getElementById("resultado").innerHTML= "Média: " + r;
-
-}
-
