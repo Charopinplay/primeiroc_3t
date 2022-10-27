@@ -6,30 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>primeir C</title>
 <script src="estudo.js"></script>
-
+<link rel="stylesheet" href="geral.css">
 </head>
 
 <body>
-    <div class="calc">
+    <div class="calculadora">
+        <span id="spTotal"> Total: 0,00</span><br>
+        Capital: <input id="valor" placeholder="Capital" type="text"><br>
+        Juros mensais: <input id="juros" placeholder="mês" type="text"><br>
+        N. meses: <input id="meses"  placeholder="tEMPO" type="text"><br>
+        <button onclick="mat()">enviar</button><br>
 
-        <span id="totalGeral">Total: 0,00</span><br>
-
-Capital: <input id="valor" type="text"><br>
-   Juros Mensais: <input id="juros" type="text"><br>
+        <span id="Tempo">Mês a mês</span>
+    </div>
+   valor: <input id="valor" type="text"><br>
+   Juros(Mensais): <input id="juros" type="text"><br>
    N°. de Messes: <input id="messes" type="text"><br>
-   <button onclick="mat()">Enviar</button><br>
-
-   <span id="tempo"> Mês a Mês</span>
-   
-</div>
+   <button onclick="mat()">Enviar</button>
 
    <br><br><br><br>
-   <span id="resultado">0,00</span><br><br>
+   <div id="calculadora">
+
+   <span id="Total">0,00</span><br><br>
+   <div>
+
    valor 1: <input id="v1" type="text"><br>
    valor 2: <input id="v2" type="text"><br>
    valor 3: <input id="v3" type="text"><br>
    <button onclick="media()">calcular Média</button>
    <button onclick="soma()">calcular Soma</button>
    <button onclick="subtração()">calcular subtração</button>
+   <div>
+   </div>
+   <span id="mes">Meses</span>
+
 </body>
 </html>
+
